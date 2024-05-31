@@ -10,10 +10,6 @@
     command:
       - "run"
       - "/config/scenario-{{ scenario }}.js"
-      - "--vus"
-      - "{{ virtual_users | to_json }}"
-      - "--duration"
-      - "{{ duration }}s"
       - "-e"
       - "SERVER_HOST={{ server_application_host }}:8080"
       - "--summary-export"
